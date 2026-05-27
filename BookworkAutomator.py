@@ -41,17 +41,17 @@ def view_answer():
     task = ''
     question = ''
     while True:
-        if task != '' and task.isdecimal() == True:
+        if task != '' and task.isdecimal() == True and int(task) > 0:
             break
         task = input("Task: ")
     while True:
-        if question != '': #and question.isdecimal() == True:
+        if question != '' and int(question) > 0:
             break
         question = ord(input("Question: ").lower()) - 96
-    print(
-        bookwork[int(task) - 1][int(question) - 1]
-    )
-
+    try:
+        print(bookwork[int(task) - 1][int(question) - 1])
+    except IndexError:
+        print("Answer not found for that task/question combination")
 def print_help():
     print(
         '|----------------------------|\n'
