@@ -47,9 +47,9 @@ def view_answer():
     while True:
         if question != '': #and question.isdecimal() == True:
             break
-        question = ord(input("Question: ").lower()) - 64
+        question = ord(input("Question: ").lower()) - 96
     print(
-        bookwork[int(task) - 1][int(question)]
+        bookwork[int(task) - 1][int(question) - 1]
     )
 
 def print_help():

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43a4a736-e75b-45f0-bb74-044dbb751033" name="Changes" comment="backup1">
+    <list default="true" id="43a4a736-e75b-45f0-bb74-044dbb751033" name="Changes" comment="backup2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookworkAutomator.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookworkAutomator.py" afterDir="false" />
     </list>
@@ -54,7 +54,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.BookworkAutomator.executor": "Debug",
+    "Python.BookworkAutomator.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779888482766</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="backup2">
+      <option name="closed" value="true" />
+      <created>1779892114681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779892114682</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,17 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add file with basically nothing" />
     <MESSAGE value="backup1" />
-    <option name="LAST_COMMIT_MESSAGE" value="backup1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BookworkAutomator.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="backup2" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup2" />
   </component>
 </project>
