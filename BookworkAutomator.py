@@ -2,12 +2,6 @@ bookwork = []
 taskCounter = 1
 questionCounter = 0
 
-def debug_values():
-    global bookwork
-    global taskCounter
-    global questionCounter
-    print(bookwork, taskCounter, questionCounter)
-
 def increment_task():
     global taskCounter
     global questionCounter
@@ -39,7 +33,6 @@ def new_answer():
     
     while len(bookwork[taskCounter - 1]) < questionCounter:
         bookwork[taskCounter - 1].append("")
-
     bookwork[taskCounter - 1][questionCounter - 1] = input(
         "Enter answer for " + str(taskCounter) + chr(questionCounter + 64).upper() + ": "
     )

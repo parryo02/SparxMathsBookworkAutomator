@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43a4a736-e75b-45f0-bb74-044dbb751033" name="Changes" comment="add file with basically nothing">
+    <list default="true" id="43a4a736-e75b-45f0-bb74-044dbb751033" name="Changes" comment="backup1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookworkAutomator.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookworkAutomator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +36,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8,
@@ -64,7 +65,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
+    "run.code.analysis.last.selected.profile": "aDefault",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
@@ -91,7 +92,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779793254365</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="backup1">
+      <option name="closed" value="true" />
+      <created>1779888436652</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779888436652</updated>
+    </task>
+    <task id="LOCAL-00003" summary="backup1">
+      <option name="closed" value="true" />
+      <created>1779888482766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779888482766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,15 +127,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add file with basically nothing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add file with basically nothing" />
+    <MESSAGE value="backup1" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BookworkAutomator.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="13" />
+          <line>51</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
