@@ -1,41 +1,46 @@
-bookwork = []
+bookwork = {}
 taskCounter = 1
-questionCounter = 0
+questionCounter = '@'
 
 def increment_task():
     global taskCounter
     global questionCounter
     taskCounter += 1
-    questionCounter = 0
+    questionCounter = '@'
 
+    """
     while len(bookwork) < taskCounter:
         bookwork.append([])
+    """
 
     print(
-        "Task is: ", taskCounter, ", "
-        "Question is: ", chr(questionCounter + 65).upper()
+    f"""Task is: {taskCounter}
+    Question is: {questionCounter}"""
     )
 
 def reset_tasks():
     global taskCounter
+    global questionCounter
     taskCounter = 1
+    questionCounter = '@'
     print(
-        "Task is: ", taskCounter
+    f"""Task is: {taskCounter}
+    Question is: A"""
     )
 
 def new_answer():
     global taskCounter
     global questionCounter
-    questionCounter += 1
+    questionCounter = chr(ord(questionCounter) + 1)
 
+    """
     while len(bookwork) < taskCounter:
         bookwork.append([])
-    
     while len(bookwork[taskCounter - 1]) < questionCounter:
         bookwork[taskCounter - 1].append("")
-    bookwork[taskCounter - 1][questionCounter - 1] = input(
-        "Enter answer for " + str(taskCounter) + chr(questionCounter + 64).upper() + ": "
-    )
+    """
+
+    bookwork.update({(taskCounter, questionCounter) : input(f'Enter answer for {taskCounter}{questionCounter}: ')})
 
 def view_answer():
     task = ''
@@ -45,36 +50,40 @@ def view_answer():
             break
         task = input("Task: ")
     while True:
-        if question != '' and int(question) > 0:
+        if question != '':
             break
-        question = ord(input("Question: ").lower()) - 96
+        question = input("Question: ").upper()
     try:
-        print(bookwork[int(task) - 1][int(question) - 1])
-    except IndexError:
+        print(bookwork[(int(task), question)])
+    except KeyError:
         print("Answer not found for that task/question combination")
 def print_help():
     print(
-        '|----------------------------|\n'
-        '| 1 | New task               |\n'
-        '| 2 | New question           |\n'
-        '| 3 | View answer            |\n'
-        '| 4 | Reset task counter     |\n'
-        '| q | Quit                   |\n'
-        '|----------------------------|\n'
+    """
+    |----------------------------|
+    | 1 | New task               |
+    | 2 | New question           |
+    | 3 | View answer            |
+    | 4 | Reset task counter     |
+    | q | Quit                   |
+    |----------------------------|
+    """
     )
 
 print(
-    '|----------------------------|\n'
-    '|  Sparx Bookwork Automator  |\n'
-    '|                            |\n'
-    '|  What do you want to do?   |\n'
-    '|                            |\n'
-    '|  1: New task               |\n'
-    '|  2: New question           |\n'
-    '|  3: View answer            |\n'
-    '|  4: Reset task counter     |\n'
-    '|  q: Quit                   |\n'
-    '|----------------------------|\n'
+"""
+|----------------------------|
+|  Sparx Bookwork Automator  |
+|                            |
+|  What do you want to do?   |
+|                            |
+|  1: New task               |
+|  2: New question           |
+|  3: View answer            |
+|  4: Reset task counter     |
+|  q: Quit                   |
+|----------------------------|
+"""
 )
 
 while True:
@@ -94,4 +103,5 @@ while True:
             reset_tasks()
         case _:
             print_help()
+
 print(bookwork)
