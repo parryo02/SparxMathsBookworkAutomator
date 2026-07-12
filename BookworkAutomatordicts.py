@@ -60,13 +60,13 @@ def view_answer():
 def print_help():
     print(
     """
-    |----------------------------|
-    | 1 | New task               |
-    | 2 | New question           |
-    | 3 | View answer            |
-    | 4 | Reset task counter     |
-    | q | Quit                   |
-    |----------------------------|
+|----------------------------|
+| 1 | New task               |
+| 2 | New question           |
+| 3 | View answer            |
+| 4 | Reset task counter     |
+| q | Quit                   |
+|----------------------------|
     """
     )
 
