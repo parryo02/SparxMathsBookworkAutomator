@@ -36,3 +36,5 @@ class app(ctk.CTk):
 
 app = app()
 app.mainloop()
+
+print(backend.bookwork)
