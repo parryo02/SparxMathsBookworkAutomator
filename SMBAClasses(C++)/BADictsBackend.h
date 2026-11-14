@@ -13,8 +13,8 @@
 
 class BADictsBackend {
 public:
-    void increment_task();
-    void reset_tasks();
+    std::string increment_task();
+    std::string reset_tasks();
     void new_answer();
     void view_answer();
     std::map<std::pair<std::size_t, char>, std::string> view_all();

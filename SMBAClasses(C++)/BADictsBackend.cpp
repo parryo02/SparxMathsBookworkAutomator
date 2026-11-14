@@ -22,20 +22,15 @@ map<pair<size_t, char>, string> bookwork;
 size_t taskCounter {1};
 char questionCounter {'@'};
 
-void BADictsBackend::increment_task() {
+string BADictsBackend::increment_task() {
     taskCounter ++;
     questionCounter = '@';
-    print(R"(
-Task is: {}
-Question is: {}
-)", taskCounter, questionCounter);
+    return std::format("Task is: {}\nQuestion is: {}\n\n", taskCounter, 'A');
 }
 
-void BADictsBackend::reset_tasks() {
+string BADictsBackend::reset_tasks() {
     taskCounter = 1;
-    print(R"(
-Task is: {}, Question is: {}
-)", taskCounter, questionCounter);
+    return std::format("Task is: {}\nQuestion is: {}\n\n", taskCounter, 'A');
 }
 
 void BADictsBackend::new_answer() {
@@ -69,7 +64,7 @@ void BADictsBackend::view_answer() {
 
         question = toupper(question[0]);
 
-        if (question != "") {
+        if (!empty(question)) {
             break;
         }
     }

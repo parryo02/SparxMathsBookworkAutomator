@@ -15,7 +15,7 @@ using namespace std;
 string userChoice {};
 
 void print_help() {
-    print(R"(
+    cout << R"(
 |----------------------------|
 | 1 | New task               |
 | 2 | New question           |
@@ -23,7 +23,7 @@ void print_help() {
 | 4 | Reset task counter     |
 | q | Quit                   |
 |----------------------------|
-)");
+)" << '\n';
 }
 
 int main() {
@@ -42,7 +42,7 @@ int main() {
 
             switch (userChoice[0]) {
                 case '1':
-                    backend.increment_task();
+                    cout << backend.increment_task();
                     break;
                 case '2':
                     backend.new_answer();
@@ -51,7 +51,7 @@ int main() {
                     backend.view_answer();
                     break;
                 case '4':
-                    backend.reset_tasks();
+                    cout << backend.reset_tasks();
                     break;
                 default:
                     print_help();
